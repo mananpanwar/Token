@@ -1,0 +1,19 @@
+contract MyToken {
+    string public tokenName = "Manan";
+    string public tokenAbbrv ="Mn";
+    uint public totalCount = 0;
+
+    mapping(address => uint)public balances;
+
+    function mint (address _address, uint _value)public{
+        totalCount += _value;
+        balances[_address] += _value;
+    }
+
+     function burn (address _address, uint _value)public{
+        if (balances[_address] >= _value){
+        totalCount -= _value;
+        balances[_address] -= _value;
+    }
+    }
+}
