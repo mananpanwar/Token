@@ -9,7 +9,7 @@ Installing
 
 
 Clone the repository from GitHub:
-git clone 
+git clone https://github.com/mananpanwar/Token
 
 
 
