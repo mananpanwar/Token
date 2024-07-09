@@ -46,21 +46,11 @@ To compile the code, click on the "Solidity Compiler" tab in the left-hand sideb
 
 Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the contract from the dropdown menu, and then click on the "Deploy" button.
 
-Once the contract is deployed, you can interact with it by using the "Mint" and "Burn" functions.We need to pass address for that provided by REMIX by copying it from "ACCOUNT" box and then click on the "Mint" function and paste the  copied address and enter value according to your choice.
+Once the contract is deployed, you can interact with it by using the "Mint" and "Burn" functions.We need to pass address for that provided by REMIX by copying it from "ACCOUNT" box and then click on the "Mint" and "Burn" functions (according to your choice) and paste the  copied address and enter value according to your choice.
  Finally, click on the "transact" button to execute the function and retrieve the value of "TotalCount" and check balance
 
 
-
-
-
-
-
-
-
-
-
-
-HELP:
+## HELP:
 If you encounter any issues, ensure that:
 
 You have the correct version of the Solidity compiler.
@@ -69,9 +59,11 @@ You are connected to the correct network (local, testnet, or mainnet).
 For common problems or issues, refer to the Solidity and Ethereum documentation, or check community forums.
 
 
-Authors
+## Authors
 Manan panwar - Contact: manancoder12213@gmail.com
-License
+
+
+## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 
