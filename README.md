@@ -21,9 +21,35 @@ Once you are on the Remix website, create a new file by clicking on the "+" icon
 ```javascript
 pragma solidity ^0.8.4;
 
+contract MyToken {
+    string public tokenName = "Manan";
+    string public tokenAbbrv ="Mn";
+    uint public totalCount = 0;
 
+    mapping(address => uint)public balances;
+
+    function mint (address _address, uint _value)public{
+        totalCount += _value;
+        balances[_address] += _value;
+    }
+
+     function burn (address _address, uint _value)public{
+        if (balances[_address] >= _value){
+        totalCount -= _value;
+        balances[_address] -= _value;
+    }
+    }
+}
 
 ```
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.4" (or another compatible version), and then click on the "Compile MyToken.sol" button.
+
+Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the contract from the dropdown menu, and then click on the "Deploy" button.
+
+Once the contract is deployed, you can interact with it by using the "Mint" and "Burn" functions.We need to pass address for that provided by REMIX by copying it from "ACCOUNT" box and then click on the "Mint" function and paste the  copied address and enter value according to your choice.
+ Finally, click on the "transact" button to execute the function and retrieve the value of "TotalCount" and check balance
+
+
 
 
 
